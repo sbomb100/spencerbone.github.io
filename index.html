@@ -1,1 +1,214 @@
 
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Book-E</title>
+  <meta charset="utf-8" />
+  <meta name="description" content="The homepage for My Bookstore" />
+
+  <!-- Import font-awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <!-- order of CSS files is important (this is the "Cascade" part of CSS) -->
+
+  <!-- global.css contains resets, custom properties, and utility classes -->
+  <link rel="stylesheet" href="css/global.css" />
+
+  <!-- start from the top-level component and work your way down -->
+  <link rel="stylesheet" href="css/app.css" />
+  <link rel="stylesheet" href="css/app-header.css" />
+  <link rel="stylesheet" href="css/header-dropdown.css" />
+  <link rel="stylesheet" href="css/app-footer.css" />
+  <link rel="stylesheet" href="css/home.css" />
+</head>
+
+<body>
+  <main>
+    <header class="header-container">
+      <section class="logo-and-title">
+        <section class="logo">
+          <a href="index.html">
+            <img src="images/site/logo.png" alt="Book-E Logo" width="75px" height="auto" />
+          </a>
+        </section>
+        <a class="text-logo" style="text-decoration:none" href="index.html">Book-E</a>
+      </section>
+      <div class="header-dropdown">
+        <button class="button categories-button"> Categories <i class="fa-solid fa-list"></i></button>
+        <ul>
+          <li><a href="category.html">Architecture</a></li>
+          <li><a href="category.html">Art</a></li>
+          <li><a href="category.html">Biography</a></li>
+          <li><a href="category.html">Cooking</a></li>
+        </ul>
+      </div>
+      <section class="search-bar-container">
+        <form action="category.html">
+          <input type="text" class="search-bar" placeholder="Search..." />
+          <button class="search-button">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+      </section>
+      <section class="header-dropdown-and-cart">
+        <div class="header-dropdown">
+          <button class="button categories-button" stlye="white-space: nowrap;">Log In <i
+              class="fa-solid fa-angle-down"></i> </button>
+          <ul>
+            <li><a href="index.html">Account Settings</a></li>
+            <li><a href="">Wishlist</a></li>
+            <li><a href="">Log Out</a></li>
+          </ul>
+        </div>
+
+        <div class="cart-container">
+          <a href="index.html" class="cart-button">
+            <i class="fas fa-shopping-cart"></i>
+            <div class="notification-bubble">5</div>
+          </a>
+        </div>
+
+
+      </section>
+    </header>
+    <div class="home-page">
+      <section class="welcome-text">
+        <h2>Welcome to Book-E!</h2>
+      </section>
+      <section class="tagline">
+        <p>
+          The Online Bookstore Where the E stands for Easy
+        </p>
+      </section>
+      <div class="bigad">
+        <div class="doublebox">
+          <p class="textbox1">
+            Find Your Next Literary Journey At Book-E
+          </p>
+          <p class="textbox2">
+            Read Anytime Anywhere
+          </p>
+        </div>
+        <div class="buynow">
+          <p>
+            <span style="font-size: 25px; color: white; font-weight: bold;">Not Sure Where to
+              Start?</span>
+          </p>
+          <button class="buynow-button">
+            <a href="index.html" style="font-size: 25px; color: white; text-decoration: none; outline: 2px;">
+              <b>FIND ME A BOOK</b>
+            </a>
+          </button>
+        </div>
+      </div>
+      
+      <section class="category-images ">
+        <div class="newarrivalsheader">
+          <p style="font-size: 25px; color: white; text-decoration: none; ">
+            New Arrivals
+          </p>
+        </div>
+        <div class="newarrivals">
+          <div class="bookitem">
+            <div class="public-domain-container">
+              <a href="category.html">
+                <img src="images/books/mockingbird.png" alt="To Kill a Mockingbird" class="bookcover">
+              </a>
+              <button class="public-domain-button">
+                <i class="fa-solid fa-book-open"></i>
+              </button>
+            </div>
+            <div class="product-info">
+              <h2 class="product-title" style="font-size: 18px">To Kill A Mockingbird</h2>
+              <p class="product-author" style="font-size: 15px"><i>-Harper Lee</i></p>
+              <p class="product-price" style="font-size: 20px; font-weight: bold; color: #03520b">$9.99</p>
+            </div>
+          </div>
+          <div class="bookitem">
+            <a href="category.html">
+              <img src="images/books/alice.png" alt="Alice of Old Vincennes" class="bookcover">
+            </a>
+            <div class="product-info">
+              <h2 class="product-title" style="font-size: 18px">Alice of Old Vincennes</h2>
+              <p class="product-author" style="font-size: 15pxvw"><i>-Maurice Thompson</i></p>
+              <p class="product-price" style="font-size: 20px; font-weight: bold; color: #03520b">$11.99</p>
+            </div>
+          </div>
+          <div class="bookitem">
+            <a href="category.html">
+              <img src="images/books/book.png" alt="About Old StoryTellers" class="bookcover">
+            </a>
+            <div class="product-info">
+              <h2 class="product-title" style="font-size: 18px">About Old StoryTellers</h2>
+              <p class="product-author" style="font-size: 15px"><i>-Donald G Mitchell</i></p>
+              <p class="product-price" style="font-size: 20px; font-weight: bold; color: #03520b">$10.99</p>
+            </div>
+          </div>
+          <div class="bookitem">
+            <a href="category.html">
+              <img src="images/books/adventure.png" alt="Adventure" class="bookcover">
+            </a>
+            <div class="product-info">
+              <h2 class="product-title" style="font-size: 18px">Adventure</h2>
+              <p class="product-author" style="font-size: 15px"><i>-Jack London</i></p>
+              <p class="product-price" style="font-size: 20px; font-weight: bold; color: #03520b">$12.99</p>
+            </div>
+          </div>
+          <div class="bookitem">
+            <a href="category.html">
+              <img src="images/books/gats.png" alt="The Great Gatsby" class="bookcover">
+            </a>
+            <div class="product-info">
+              <h2 class="product-title" style="font-size: 18px">The Great Gatsby</h2>
+              <p class="product-author" style="font-size: 15px"><i>-F Scott Fitzgerald</i></p>
+              <p class="product-price" style="font-size: 20px; font-weight: bold; color: #03520b">$7.99</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </div>
+    <footer class="footer-container">
+      <section class="links">
+        <button class="rounded-button">
+          <a href="index.html">Get Help Here</a>
+        </button>
+        <button class="rounded-button">
+          <a href="index.html">About Us</a>
+        </button>
+      </section>
+      <section>
+        <p>
+          <span style="font-size: 12px; white-space: nowrap; color: black;"><u>Not Copyright © 2024 - 2024 Book-E. No
+              rights reserved.</u></span>
+        </p>
+      </section>
+
+      <section class="social-media-icons">
+        <p>
+          <span style="font-size: 20px;  white-space: nowrap; color: black;">Reach Out on Social Media!</span>
+        </p>
+        <section class="icons">
+          <button class="icon-button">
+            <a href="https://www.facebook.com" target="_blank">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </button>
+          <button class="icon-button">
+            <a href="https://www.instagram.com" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </button>
+          <button class="icon-button">
+            <a href="https://x.com" target="_blank">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+          </button>
+        </section>
+      </section>
+    </footer>
+  </main>
+</body>
+
+</html>
