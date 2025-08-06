@@ -1,254 +1,126 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Spencer Bone</title>
-    <meta charset="utf-8" />
-    <meta name="description" content=" The Website for My Resume" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spencer Bone | Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="home.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css.css">
 </head>
 
 <body>
-        <!-- Header of Site -->
-        <header>
-            <div class="header-body"><b>Spencer Bone</b></div>
-            <div class="header-bottom"></div>
-                
-        </header>
-        <!-- Body of Site -->
-        <div class="main-container">
-            <div class="side-box">
-                <!-- Image of Me -->
-                <img class="selfie" src="pic.png"><img/>
-                <div class="monologue">
-                <p>Hello!</p>
-                <div style="padding-bottom: 7px;">I made this website as an online resume and to practice html programming.
-                </div>
-                <div style="padding-bottom: 7px;">
-                    The buttons below will let you download a paper resume, as well as an unofficial transcript of my university coursework so far. 
-                </div>
-                    
-                <div>For just a bit about me, in my free time I love weightlifting (3 years now) and I have been dabbling with rock climbing over the past year. </div>
-                    
-                </div>
-                <div class="buttonlist-container">
-                    
-                    <!-- Resume Link -->
-                    <a href="./Spencer Bone Resume.pdf" download="SpencerBoneResume" style="border: none; outline: none; box-shadow: none;">
-                        <button class="listbutton">
-                            <div class="split-text" >
-                                <span style="flex:1;">
-                                <b>Resume</b>
-                                </span>  
-                                <span>
-                                    <i class="fa-solid fa-download"></i>
-                                </span>
-                            </div>
-                        </button>
-                    </a>
-                    <!-- Unofficial Transcript -->
-                    <a href="./Unofficial Academic Transcipt.pdf" download="SpencerBoneTranscript" style="border: none; outline: none; box-shadow: none;">
-                        <button class="listbutton">
-                            <div class="split-text" >
-                                <span style="flex:1;">
-                                    <b>Transcript</b>
-                                </span>  
-                                <span>
-                                    <i class="fa-solid fa-download"></i>
-                                </span>
-                            </div>
-                         </button>
-                    </a>
-                    <!-- Other Links -->
-                    <div class="socials">
-                        <a href="https://www.linkedin.com/in/spencer-bone"  style="text-decoration:none; border: none; outline: none; box-shadow: none;">
-                            <button class="social-button">
-                                <i class="fa-brands fa-linkedin"></i>
-                            </button>
-                        </a>
-                        <a href="https://vt.joinhandshake.com/profiles/24796504"  style="text-decoration:none; border: none; outline: none; box-shadow: none;">
-                            <button class="social-button">
-                                <i class="fa-solid fa-handshake"></i>
-                            </button>
-                        </a>
-                        <a href="https://github.com/sbomb100"  style="text-decoration:none; border: none; outline: none; box-shadow: none;">
-                            <button class="social-button">
-                                <i class="fa-brands fa-square-github"></i>
-                            </button>
-                        </a>
-                    </div>
-                    
-                </div>
+    <button class="dark-mode-toggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
 
+    <header class="header">Spencer Bone</header>
+
+    <div class="container my-4">
+        <div class="row g-4">
+            <div class="col-lg-4">
+                <div class="side-box text-center">
+                    <img src="pic.png" alt="Profile Picture">
+                    <div class="mt-3">
+                        <p>Hello! I made this website as an online resume and to practice web development.</p>
+                        <p>I’m a Full-Stack Developer and ServiceNow Consultant with a passion for weightlifting and rock climbing.</p>
+                    </div>
+                    <div class="d-grid gap-2">
+                        <a href="./Spencer Bone Resume.pdf" download class="listbutton">Download Resume</a>
+                        <a href="./Unofficial Academic Transcript.pdf" download class="listbutton">Download Transcript</a>
+                    </div>
+                    <div class="d-flex justify-content-center gap-2 mt-3">
+                        <a href="https://www.linkedin.com/in/spencer-bone"><button class="social-button"><i class="fa-brands fa-linkedin"></i></button></a>
+                        <a href="https://vt.joinhandshake.com/profiles/24796504"><button class="social-button"><i class="fa-solid fa-handshake"></i></button></a>
+                        <a href="https://github.com/sbomb100"><button class="social-button"><i class="fa-brands fa-github"></i></button></a>
+                    </div>
+                </div>
             </div>
-            <div class="resume-box">
-                <!-- Projects -->
-                 <div class="projects-box">
-                    <!-- PROJECTS -->
-                     <div class="mini-header">
-                        Projects
-                     </div>
-                     <!-- seperation bar -->
-                     <div class="spacing-bar"></div>
-                     
-                     <div class="mini-container">
-                        <div class="split-text">
-                            <span>
-                                <b style="font-size: 24px;">Book-E</b> --- Bookstore Website
-                            </span>  
-                            <span style="margin-right: 5px; font-size: 18px; font-style: italic;">
-                                Aug 2024 - Dec 2024
-                            </span>
+
+            <div class="col-lg-8">
+                <div class="resume-box">
+                    <section class="mb-4">
+                        <div class="mini-header">Projects</div>
+                        <div class="mini-container mb-3">
+                            <div class="d-flex justify-content-between"><span><b>EnQueue</b> — Student Queue Management Platform</span><span>Jan 2025 – May 2025</span></div>
+                            <ul>
+                                <li>Designed real-time queue management integrating FAQ and live interactions.</li>
+                                <li>Implemented WebSocket live updates and Canvas API integration.</li>
+                                <li>Developed role-based access with OAuth2 & JWT.</li>
+                            </ul>
                         </div>
-                     
+                        <div class="mini-container mb-3">
+                            <div class="d-flex justify-content-between"><span><b>Book-E</b> — Bookstore Website</span><span>Aug 2024 – Dec 2024</span></div>
+                            <ul>
+                                <li>Crafted front-end layouts with Figma and React components.</li>
+                                <li>Built dynamic cart interactions and animations using React Hooks.</li>
+                                <li>Managed MySQL databases with DAO patterns.</li>
+                            </ul>
+                        </div>
+                        <div class="mini-container mb-3">
+                            <div class="d-flex justify-content-between"><span><b>PintOS</b> — OS Enhancements</span><span>Jan 2024 – May 2024</span></div>
+                            <ul>
+                                <li>Implemented page table management & process scheduling.</li>
+                                <li>Enhanced file system support and multi-threading.</li>
+                            </ul>
+                        </div>
+                    </section>
 
-                    <li class="project">Leveraged Figma, CSS, and HTML to craft intuitive design frameworks and visually appealing layouts 
-                    </li>  
-                    <li class="project">Engineered advanced front-end functionality by programming from scratch with JavaScript, React, and React Hooks, transforming designs into dynamic, user-centric interfaces featuring sophisticated interactions, including animations and seamless cart management</li>  
-                    <li class="project">Designed and managed robust database structures using MySQL and DAO Patterns, enabling efficient querying and retrieval of categorized book data.
-                    </li>
+                    <section class="mb-4">
+                        <div class="mini-header">Experience</div>
+                        <div class="mini-container mb-3">
+                            <div class="d-flex justify-content-between"><span><b>ServiceNow Consultant Intern</b></span><span>May 2025 – Sep 2025</span></div>
+                            <ul>
+                                <li>Earned CSA and CAD certifications on ServiceNow platform.</li>
+                                <li>Customized instances using AngularJS & JavaScript.</li>
+                            </ul>
+                        </div>
+                        <div class="mini-container mb-3">
+                            <div class="d-flex justify-content-between"><span><b>Graduate & Undergraduate TA</b></span><span>Aug 2020 – May 2025</span></div>
+                            <ul>
+                                <li>Taught Java, Scala, Golang, Haskell, and more.</li>
+                                <li>Guided students in OOP, functional programming, and app development using Android Studio.</li>
+                            </ul>
+                        </div>
+                    </section>
 
+                    <section>
+                        <div class="mini-header">Education</div>
+                        <div class="mini-container mb-3">
+                            <div class="d-flex justify-content-between"><span><b>M.Eng. in Computer Science</b></span><span>Aug 2024 – May 2025</span></div>
+                            <ul>
+                                <li>Concentration: Software Engineering & Networking | GPA: 3.97/4.00</li>
+                            </ul>
+                        </div>
+                        <div class="mini-container mb-3">
+                            <div class="d-flex justify-content-between"><span><b>B.S. in Computer Science</b></span><span>Aug 2020 – May 2024</span></div>
+                            <ul>
+                                <li>Minors in Economics and Mathematics | GPA: 3.73/4.00</li>
+                            </ul>
+                        </div>
+                    </section>
                 </div>
-                     <div class="mini-container">
-                        <div class="split-text">
-                            <span>
-                                <b style="font-size: 24px;">Pintos</b> --- Updating a Basic OS
-                            </span>  
-                            <span style="margin-right: 5px; font-size: 18px; font-style: italic;">
-                                Jan 2024 - May 2024
-                            </span>
-                        </div>
-                     
-
-                     <li class="project">Initially starting with adding process scheduling, implementing system calls, advancing the file system, where my main was contribution being the implementation of a secondary page table and managing frame/page usage</li>  
-
-                     <li class="project">Bolstered by the utilization of multiple threads to execute a single process (as initially it was threads could only run single processes) allowing for parallel computation, cutting down on execution time</li>
-
-                     <li class="project">Process Scheduling entailed making a timer for threads and CPU balancing between processors to reduce idle times of executing threads. Implementing system calls involved putting the call's arguments on a child processes stack and taking those arguments to execute specific system calls</li>
-                     </div>
-
-
-                    <div class="mini-container">
-                        <div class="split-text">
-                            <span>
-                                <b style="font-size: 24px;">Fancy Gallery</b> --- Android Photo Database App
-                            </span>  
-                            <span style="margin-right: 5px; font-size: 18px; font-style: italic;">
-                                Nov 2023 - Dec 2023
-                            </span>
-                        </div>
-                     
-
-                     <li class="project">A Solo Project in Kotlin in Android Development Studio</li>  
-
-                     <li class="project">Network queries and an SQL database were used to make it possible to see photos uploaded live to an online database website</li>
-
-                     <li class="project">Utilized multiple fragments to make it possible to switch between landscape and portrait, as well as a fragment for a geographical location (obtained from photos in database to show where photos were taken)</li>
-                     </div>
-                 </div>
-                <!-- Work -->
-                 <div class="work-box">
-                    <!-- experience header-->
-                    <div class="mini-header">
-                        Experience
-                    </div>
-                    <!-- seperation bar-->
-                    <div class="spacing-bar"></div>
-                     
-                    <div class="mini-container">
-                        <section style="margin-bottom: 3px;">
-                        <div class="split-text">
-                            <span>
-                                <b>Graduate Teachers Assistant</b>
-                            </span>  
-                            <span style="margin-right: 5px; font-size: 18px; font-style: italic;">
-                                Aug 2024 - Present [at Virginia Tech]
-                            </span>
-                        </div>
-                        <li class="project">
-                            Guided students in setting up and using Eclipse IDE for Java programming
-                        </li>
-                        <li class="project">
-                            Instructed students on foundational programming structures (arrays, lists, queues, stacks) and object-oriented programming in Java
-                        </li>
-                        
-                        
-                        </section>
-                        <section style="margin-bottom: 3px;">
-                        <div class="split-text">
-                            <span>
-                                <b>Undergraduate Teachers Assistant</b>
-                            </span>  
-                            <span style="margin-right: 5px; font-size: 18px; font-style: italic;">
-                                Aug 2020 - May 2024 [at Virginia Tech]
-                            </span>
-                        </div>
-                        
-                        <li class="project">Guided students in adapting to and learning various programming languages, including Pascal, C++, PROLOG, Golang, Scala, Haskell, and Ruby
-                        </li>
-                        <li class="project">
-                            Taught key concepts such as functional programming, parse trees, interpreters, and advanced recursion, using languages suited to each paradigm (e.g., Scala for functional programming),  establishing the need for different programming languages
-                        </li>
-                        </section>
-                        
-                    </div>
-                 </div>
-                <!-- School -->
-                 <div class="school-box">
-                    <!-- education header-->
-                    <div class="mini-header">
-                        Education
-                    </div>
-                    <!-- seperation bar-->
-                    <div class="spacing-bar"></div>
-                    <div class="mini-container">
-                        <section style="margin-bottom: 3px;">
-                        <div class="split-text">
-                            <span>
-                                <b>Masters of Engineering </b>
-                            </span>  
-                            <span style="margin-right: 5px; font-size: 18px; font-style: italic;">
-                                Virginia Polytechnic Institute and State University
-                            </span>
-                        </div>
-   
-                        <li class="project">Concentration in Software Engineering and Networking</li>  
-                        <li class="project split-text">
-                            <span>
-                                Cumulative GPA: 4.00/4.00 
-                            </span>
-                            <span style="font-size: 16px; font-style: italic; align-self: right;"> 
-                                August 2024-May 2025
-                            </span>
-                        </li> 
-                        </section>
-                        <section style="margin-bottom: 3px;">
-                        <div class="split-text">
-                            <span>
-                                <b>Bachelors of Engineering </b>
-                            </span>  
-                            <span style="margin-right: 5px; font-size: 18px; font-style: italic;">
-                                Virginia Polytechnic Institute and State University
-                            </span>
-                        </div>
-                        
-                        <li class="project">Major in Computer Science, Minor in Economics and Mathematics</li> 
-                        <li class="project split-text">Cumulative GPA: 3.73/4.00 
-                            <span style="font-size: 16px; font-style: italic; align-self: right;"> 
-                                August 2020-May 2024
-                            </span>
-                        </li> 
-                        </section>
-                    </div>
-                        
-
-                 </div>
             </div>
         </div>
-        <!-- Footer of Site -->
-        <footer class="footer-body">
-            Thank You For Your Time
-        </footer>
+    </div>
 
+    <footer class="footer-body">Thank You For Your Time</footer>
+
+    <script>
+        function toggleDarkMode() {
+            const root = document.documentElement;
+            if (root.style.getPropertyValue('--background-color') === '#ffffff') {
+                root.style.setProperty('--background-color', '#1e1e1e');
+                root.style.setProperty('--text-color', '#ffffff');
+                root.style.setProperty('--card-bg', '#2e2e2e');
+            } else {
+                root.style.setProperty('--background-color', '#ffffff');
+                root.style.setProperty('--text-color', '#000000');
+                root.style.setProperty('--card-bg', '#f0f0f0');
+            }
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
+</html>
